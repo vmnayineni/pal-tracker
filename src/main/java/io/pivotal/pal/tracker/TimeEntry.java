@@ -29,6 +29,14 @@ public class TimeEntry {
 
     }
 
+    public TimeEntry(TimeEntry timeEntry) {
+        this.id = timeEntry.id;
+        this.projectId = timeEntry.projectId;
+        this.userId = timeEntry.userId;
+        this.date = timeEntry.date;
+        this.hours = timeEntry.hours;
+    }
+
     public long getId() {
         return id;
     }
